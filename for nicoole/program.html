@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Programs - College of Education</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-image: url('bg.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 50;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo-container {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .logo-container img {
+            width: 80px;
+            height: auto;
+        }
+
+        .navbar {
+            display: flex;
+            gap: 30px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .navbar a {
+            font-size: 18px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: 120px;
+        }
+
+        .content h1 {
+            font-size: 48px;
+            margin: 20px 0;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+        }
+
+        .programs-image {
+            width: 80%;
+            max-width: 1200px;
+            margin: 20px auto;
+            border-radius: 15px;
+        }
+
+        .programs-description {
+            width: 80%;
+            max-width: 1000px;
+            margin: 20px auto;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .programs-description h2 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .programs-description p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #ddd;
+        }
+
+        @media (max-width: 768px) {
+            .content h1 {
+                font-size: 36px;
+            }
+
+            .programs-description h2 {
+                font-size: 28px;
+            }
+
+            .programs-description p {
+                font-size: 16px;
+            }
+
+            .programs-image {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo-container">
+            <img src="logo1.png" alt="Logo 1">
+            <img src="logo2.png" alt="Logo 2">
+        </div>
+        <div class="navbar">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="programs.html">PROGRAMS</a>
+            <a href="administrator.html">ADMINISTRATION</a>
+            <a href="facilities.html">FACILITIES</a>
+        </div>
+    </header>
+    
+    <div class="content">
+        <h1><b>Our Educational Programs</b></h1>
+
+        <img class="programs-image" src="bg.jpg" alt="Educational Programs">
+
+        <div class="programs-description">
+            <h2>Bachelor of Education Programs</h2>
+            <p>Our College of Education offers a variety of undergraduate programs designed to prepare future educators. We focus on delivering quality education through modern teaching methodologies, interactive learning, and practical teaching experience.</p>
+
+            <p>We offer the following programs:</p>
+            <ul>
+                <li>Bachelor of Elementary Education (BEED)</li>
+                <li>Bachelor of Secondary Education (BSED) in different majors</li>
+                <li>Bachelor of Physical Education (BPEd)</li>
+                <li>Bachelor of Technical-Vocational Teacher Education (BTVTED)</li>
+            </ul>
+
+            <p>Each program is crafted to ensure that students are well-equipped to excel in the classroom and make a meaningful impact in the education sector.</p>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College of Education</title>
+    <style>
+        body {
+            background-image: url('bg.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 50;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .logo-container {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .logo-container img {
+            width: 80px;
+            height: auto;
+        }
+
+        .navbar {
+            display: flex;
+            gap: 30px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .navbar a {
+            font-size: 18px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: 120px;
+        }
+
+        .content h1 {
+            font-size: 48px;
+            margin: 0;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+        }
+
+        .logout-button {
+            margin: 20px;
+            padding: 12px 24px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s, transform 0.3s;
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .logout-button:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            .logo-container img {
+                width: 60px;
+            }
+
+            .navbar {
+                gap: 15px;
+            }
+
+            .navbar a {
+                font-size: 16px;
+                padding: 6px 10px;
+            }
+
+            .content h1 {
+                font-size: 36px;
+            }
+
+            .logout-button {
+                font-size: 14px;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="logo 1.png" alt="Logo 1">
+            <img src="logo 2.png" alt="Logo 2">
+        </div>
+        <div class="navbar">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="program.html">PROGRAMS</a>
+            <a href="Administrator.html">ADMINISTRATION</a>
+            <a href="facilities.html">FACILITIES</a>
+        </div>
+    </header>
+    
+    <div class="content">
+        <h1><b>COLLEGE OF EDUCATION</b></h1>
+    </div>
+
+    <button class="logout-button" onclick="window.location.href='sign in.html';">Log Out</button>
+</body>
+</html>
